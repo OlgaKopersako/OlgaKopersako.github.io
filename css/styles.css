@@ -11,6 +11,8 @@ body {
 
 /* Header/logo Title */
 .header {
+    	background-size: cover;
+	background-position: center;
     padding: 60px;
     text-align: center;
   background-image: url(../imag/mathematics-pictures-background-29-1.jpg);
@@ -18,16 +20,46 @@ body {
     color: #FFFFFF;
     font-size: 90px;
 }
-
+h1 {
+    font-size: 80px;
+}
+body .main {
+    padding-right: 0;
+}
+h2 {
+    border-left: 5px #008080 solid;
+    padding: 10px;
+      -webkit-transition: -webkit-transform .15s ease;
+  -moz-transition: -moz-transform .15s ease;
+  -o-transition: -o-transform .15s ease;
+  -ms-transition: -ms-transform .15s ease;
+  transition: transform .15s ease;
+}
+h2:hover {
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+  box-shadow: 0px 2px 18px -2px rgba(0,0,0,0.75);
+  z-index: 5;
+    background: white;
+    color: black;
+}
  #logo1 {	top: 0px;
-		left: 0px;
-	width: 68px;
+		left: 5px;
+	width: 65px;
     position: fixed; 
 		} 
 /* Style the top navigation bar */
 .navbar {
+    z-index: 100;
+    width: 100%;
+    position: sticky;
+    top: 0px;
     display: flex;
     background-color: #008080;
+        transition: background-color 0.2s;
 }
 
 /* Style the navigation bar links */
@@ -36,6 +68,8 @@ body {
     padding: 14px 18px;
     text-decoration: none;
     text-align: center;
+    transition: background-color 0.3s;
+    transition: color 0.3s;
 }
 
 /* Change color on hover */
@@ -48,6 +82,8 @@ body {
 .row {  
     display: flex;
     flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /* Create two unequal columns that sits next to each other */
@@ -61,21 +97,19 @@ body {
 /* Main column */
 .main {
     flex:70%;
-    background-image: url(../imag/21627562.jpg);
+   /* background-image: url(../imag/21627562.jpg);*/
     padding: 20px;
 }
 
 /* Fake image, just for this example */
 .fakeimg {
-   background-image: url(../imag/21627562.jpg);
-    width: 100%;
+  /* background-image: url(../imag/21627562.jpg);*/
+    width: 95%;
     padding: 20px;
 }
 .col-sm-9{
      font-size: 20px;
     text-align: justify;
-    left: 12px;
-    right: 12px;
     }
 #upbutton {
     background: url("images1/up2.png") no-repeat top left;
@@ -407,5 +441,14 @@ footer {
 @media screen and (max-width: 700px) {
     .row, .navbar {   
         flex-direction: column;
+        position:inherit;
+    }
+    h1 {
+        font-size: 48px;
+    }
+
+    body, .main {
+        margin: 0 auto;
+        padding: 0;
     }
 }
