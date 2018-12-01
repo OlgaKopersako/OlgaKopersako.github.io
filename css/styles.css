@@ -100,6 +100,25 @@ h2:hover {
    /* background-image: url(../imag/21627562.jpg);*/
     padding: 20px;
 }
+#tileblock > div:hover{
+   -webkit-box-shadow: 0px 6px 21px 3px rgba(0,0,0,0.48);
+-moz-box-shadow: 0px 6px 21px 3px rgba(0,0,0,0.48);
+box-shadow: 0px 6px 21px 3px rgba(0,0,0,0.48);
+}
+#tileblock{
+    text-align: center;
+    background-color: #40E0D0;
+}
+#tileblock > div {
+    -webkit-box-shadow: 0px 2px 11px -1px rgba(0,0,0,0.68);
+    -moz-box-shadow: 0px 2px 11px -1px rgba(0,0,0,0.68);
+    box-shadow: 0px 2px 11px -1px rgba(0,0,0,0.68);
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    width:45%;
+}
 
 /* Fake image, just for this example */
 .fakeimg {
