@@ -90,7 +90,7 @@ h2:hover {
 /* Sidebar/left column */
 .side {
     flex: 30%;
-    background-color: #f1f1f1;
+    /*background-color: #f1f1f1;*/
     padding: 20px;
 }
 
