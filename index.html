@@ -19,7 +19,39 @@
     margin-bottom: 10px; /* Отступ снизу */
    }
 p {font-size: 20px;}
-
+#submit {
+font-family: sans-serif;
+color: #ffffff;
+font-size: 18px;
+padding: 0px;
+text-decoration: none;
+box-shadow: 0px 1px 3px #666666;
+-webkit-box-shadow: 0px 1px 3px #666666;
+-moz-box-shadow: 0px 1px 3px #666666;
+text-shadow: 1px 1px 3px #666666;
+background: -webkit-gradient(linear, 0 0, 0 100%, from(#ce1515), to(#8b0d0d));
+background: -moz-linear-gradient(top, #ce1515, #8b0d0d);
+}
+ 
+#submit:hover {
+ background: -webkit-gradient(linear, 0 0, 0 100%, from(#8b0d0d), to(#ce1515));
+ background: -moz-linear-gradient(top, #8b0d0d, #ce1515)
+}
+#respond input[type=text], textarea {
+ -webkit-transition: all 0.30s ease-in-out;
+ -moz-transition: all 0.30s ease-in-out;
+ -ms-transition: all 0.30s ease-in-out;
+ -o-transition: all 0.30s ease-in-out;
+ outline: none;
+ padding: 3px 0px 3px 3px;
+ margin: 5px 1px 3px 0px;
+ border: 1px solid #DDDDDD;
+}
+#respond input[type=text]:focus, textarea:focus {
+ box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+ margin: 5px 1px 3px 0px;
+ border: 1px solid rgba(81, 203, 238, 1);
+}
     </style>
 </head>
 <body>
@@ -66,7 +98,7 @@ p {font-size: 20px;}
       <div class="fakeimg"><img src="imag/EmbeddedImage.jpg"style="height:200px; "></div>
 	 <a href="https://www.google.com/maps/@51.2421597,33.1644001,15z?hl=uk" target="_blank"><h2> На карті </h2></a>
 	  <div class="fakeimg"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9990.986809484004!2d33.1644000943526!3d51.24215967659902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1542650568187" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></div>
- <form name="MyForm" action="https://OlgaKopersako/olgakopersako.github.io/mail.php" method="post">
+ <form name="MyForm" action="https://github.com/OlgaKopersako/olgakopersako.github.io/mail.php" method="post">
 <p><input class="input" name="name" type="text" style="width:15%" /> Ваше имя*</p>
  
 <p><input class="input" name="email" type="text" style="width:15%" /> Электронная почта*</p>
