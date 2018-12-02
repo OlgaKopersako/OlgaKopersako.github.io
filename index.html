@@ -105,7 +105,7 @@ p {font-size: 20px;}
       <div class="fakeimg"><img src="imag/EmbeddedImage.jpg"style="height:200px; "></div>
 	 <a href="https://www.google.com/maps/@51.2421597,33.1644001,15z?hl=uk" target="_blank"><h2> На карті </h2></a>
 	  <div class="fakeimg"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9990.986809484004!2d33.1644000943526!3d51.24215967659902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1542650568187" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-       <form method="POST" id="feedback-form">
+ <form method="POST" id="feedback-form">
 Как к Вам обращаться:
 <input type="text" name="nameFF" required placeholder="фамилия имя отчество" x-autocompletetype="name">
 Email для связи:
@@ -113,26 +113,7 @@ Email для связи:
 Ваше сообщение:
 <textarea name="messageFF" required rows="5"></textarea>
 <input type="submit" value="отправить">
-</form>
-<script>
-document.getElementById('feedback-form').addEventListener('submit', function(evt){
-  var http = new XMLHttpRequest(), f = this;
-  evt.preventDefault();
-  http.open("POST", "https://github.com/OlgaKopersako/olgakopersako.github.io/contacts.php", true);
-  http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-  http.send("nameFF=" + f.nameFF.value + "&contactFF=" + f.contactFF.value + "&messageFF=" + f.messageFF.value);
-  http.onreadystatechange = function() {
-    if (http.readyState == 4 && http.status == 200) {
-      alert(http.responseText + ', Ваше сообщение получено.\nНаши специалисты ответят Вам в течении 2-х дней.\nБлагодарим за интерес к нашей фирме!');    
-      f.messageFF.removeAttribute('value'); // очистить поле сообщения (две строки)
-      f.messageFF.value='';
-    }
-  }
-  http.onerror = function() {
-    alert('Извините, данные не были переданы');
-  }
-}, false);
-</script>	  
+</form> 	  
   </div>
   <div class="main">
 	  <div class="fakeimg"> 
