@@ -6,7 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">   
-<style>
+
+	<meta name="author" content="ALE">
+  <link rel="stylesheet" type="text/css" media="all" href="styles.css">
+  <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Skranji:400,700|Oxygen:400,700">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<style>
 .side {
     background-color: #f1f1f1;
 }
@@ -65,13 +70,39 @@ p {font-size: 20px;}
       <div class="fakeimg"><img src="imag/EmbeddedImage.jpg"style="height:200px; "></div>
 	 <a href="https://www.google.com/maps/@51.2421597,33.1644001,15z?hl=uk" target="_blank"><h2> На карті </h2></a>
 	  <div class="fakeimg"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9990.986809484004!2d33.1644000943526!3d51.24215967659902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1542650568187" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></div>
- <form action="send.php" method="post">
 
-Ваше имя <input type="text" name="first_name"><br>
-Email: <input type="text" name="email" required placeholder="Обязательное поле"><br>
-Сообщение:<br><textarea rows="5" name="message" cols="30"></textarea><br>
-<input type="submit" name="submit" value="Submit">
-</form>
+	  
+	  <div id="w">
+    <h1>Написать письмо !</h1>
+    <form id="contactform" name="contact" method="post" action="#">
+      <p class="note"><span class="req">*</span> Поля со звездочкой обязательны для заполнения</p>
+      <div class="row">
+        <label for="name">Ваше Имя <span class="req">*</span></label>
+        <input type="text" name="name" id="name" class="txt" tabindex="1" placeholder="Стив Джобс" required>
+      </div>
+	  
+      <div class="row">
+        <label for="email">E-mail Адрес <span class="req">*</span></label>
+        <input type="email" name="email" id="email" class="txt" tabindex="2" placeholder="address@mail.ru" required>
+      </div>
+      
+      <div class="row">
+        <label for="subject">Тема <span class="req">*</span></label>
+        <input type="text" name="subject" id="subject" class="txt" tabindex="3" placeholder="Тема письма" required>
+      </div>
+      
+      <div class="row">
+        <label for="message">Сообщение <span class="req">*</span></label>
+        <textarea name="message" id="message" class="txtarea" tabindex="4" required></textarea>
+      </div>
+      
+      <div class="center">
+        <input type="submit" id="submitbtn" name="submitbtn" tabindex="5" value="Отправить Сообщение">
+      </div>
+    </form>
+  </div>
+	  
+	  
 	</div>
   <div class="main">
 	  <div class="fakeimg"> 
